@@ -1,0 +1,48 @@
+
+Knowledge Transfer Document: Code Generation Flask Application
+
+Overview:
+This Flask application provides an API endpoint to generate boilerplate code for a Java Spring Boot project using OpenAI's GPT-4. 
+The application allows users to specify various aspects of the project, including model classes, repositories, services, controllers, 
+request classes, and the main application class.
+
+Prerequisites:
+- Python 3.x: Ensure Python is installed on your system.
+- Flask: A web framework for Python.
+- OpenAI Python Client: Library to interact with OpenAI's API.
+- Java Development Kit (JDK): For compiling and running Java code.
+
+Installation Steps:
+1. Install Python and Flask:
+   - pip install Flask
+2. Install OpenAI Python Client:
+   - pip install openai
+3. Set Up Java Development Environment:
+   - Download and install the Java Development Kit (JDK) from Oracle's website or use OpenJDK.
+4. Install Required Libraries:
+   - pip install requests
+
+Configuration:
+Set Environment Variables:
+- OpenAI API Key: Store your OpenAI API key in an environment variable to avoid hardcoding it in the script.
+
+Application Configuration:
+- Update the openai.api_key with the environment variable for better security.
+
+Code Explanation:
+Flask Application Setup:
+- The application is set up using Flask and configured to handle POST requests to generate code.
+
+Code Generation Logic:
+- The application uses predefined prompts to generate Java code for various components of a Spring Boot project via the OpenAI API.
+
+File Handling:
+- The application handles the creation of directories and saving of generated code files in a specified output directory.
+
+Running the Application:
+1. Start the Flask server by running the Python script.
+2. Use a tool like curl or Postman to send a POST request to the endpoint with the required JSON data.
+
+Conclusion:
+This Flask application leverages OpenAI's GPT-4 model to automate the generation of Java Spring Boot project boilerplate code. 
+Ensure you have all dependencies installed and your API key properly configured before running the application.
